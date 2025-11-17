@@ -52,4 +52,4 @@ If you encounter any issues:
 
 ## License
 
-MIT License - see [LICENSE](LICENSE) file for details.
+Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International - see [LICENSE](LICENSE) file for details.
