@@ -19,7 +19,7 @@ A comprehensive time tracking addon for Blender that helps you monitor your prod
 
 ## Installation
 
-1. Download the latest release from [Releases](https://github.com/yourusername/blender-time-tracker/releases)
+1. Download the latest release from [Releases](https://github.com/Budloks/BBTracker/releases)
 2. In Blender: Edit → Preferences → Add-ons → Install...
 3. Select the downloaded `.zip` file
 4. Enable "System: Blender Time Tracker"
@@ -44,7 +44,7 @@ Your time tracking data is stored locally at:
 ## Support
 
 If you encounter any issues:
-1. Check the [Issues](https://github.com/yourusername/blender-time-tracker/issues) page
+1. Check the [Issues](https://github.com/Budloks/BBTracker/issues) page
 2. Create a new issue with:
    - Blender version
    - Steps to reproduce
