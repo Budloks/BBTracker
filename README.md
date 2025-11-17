@@ -26,7 +26,8 @@ A comprehensive time tracking addon for Blender that helps you monitor your prod
 
 OR
 
-1. Drag and drop the downloaded `.zip` file into Blender and click OK in the popup window
+1. Drag and drop the downloaded `.zip` file into Blender 
+2. Click OK in the popup window
 
 ## Usage
 
