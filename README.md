@@ -16,18 +16,20 @@ A comprehensive time tracking addon for Blender that helps you monitor your prod
 - **Compact & Detailed Views** - Toggle between minimal and detailed UI
 - **Collapsible Sections** - Organize the UI to your preference
 - **Session History** - Track current and longest sessions
+- **Status Bar Counter** - Today's and total time always visible at the bottom of Blender
+- **Activity Heatmap** - GitHub-style grid of your daily activity (hover a day for details)
+- **Projects List** - Search, sort by time / recent / name, click a project to open it
+- **CSV Export** - Daily, per-project and per-session data for Excel / Google Sheets
+- **Preferences** - AFK timeout, render counting, background counting, status bar options
 
 ## Installation
 
 1. Download the latest release from [Releases](https://github.com/Budloks/BBTracker/releases)
-2. In Blender: Edit → Preferences → Add-ons → Install...
-3. Select the downloaded `.zip` file
-4. Enable "BBTracker: Blender Time Tracker" (Should be on by default)
+2. In Blender (4.2 or newer, tested on 5.3): Edit → Preferences → Get Extensions → ⌄ menu (top right) → Install from Disk...
+3. Select the downloaded `bbtracker-x.y.z.zip` file (or drag & drop the zip into Blender)
+4. Make sure "BBTracker" is enabled under Add-ons
 
-OR
-
-1. Drag and drop the downloaded `.zip` file into Blender 
-2. Click OK in the popup window
+To build the zip yourself: `blender --command extension build` in this folder.
 
 ## Usage
 
@@ -43,8 +45,16 @@ Properties Editor → Scene → Time Tracker
 
 ## Data Storage
 
-Your time tracking data is stored locally at:
-`[Blender Config]/blender_time_tracker.json`
+Your time tracking data is stored locally, shared by every Blender version, at:
+`%APPDATA%\Blender Foundation\Blender\BBTracker\bbtracker_data.json` (Windows)
+`~/.config/blender/BBTracker/bbtracker_data.json` (Linux)
+`~/Library/Application Support/Blender/BBTracker/bbtracker_data.json` (macOS)
+
+Updating Blender does not reset your hours. On first start, data from older
+versions (`<version>/config/blender_time_tracker.json`) is imported automatically.
+Every save is atomic, the previous copy is kept as `.bak`, and daily backups are
+kept in the `backups` folder (also made before "Reset All Data").
+Use "Open Data Folder" in the panel to find it.
 
 ## Support
 
